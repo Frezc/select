@@ -279,7 +279,7 @@ class Select extends React.Component {
       inputValue = '';
     }
     if (props.autoClearSearchValue) {
-      this.setInputValue(inputValue, false);
+      this.setInputValue(inputValue, isMultipleOrTags(props));
     }
   };
 
@@ -293,7 +293,7 @@ class Select extends React.Component {
     }
     const { props } = this;
     if (props.autoClearSearchValue) {
-      this.setInputValue('', false);
+      this.setInputValue('', isMultipleOrTags(props));
     }
   };
 

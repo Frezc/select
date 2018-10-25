@@ -73,6 +73,7 @@ class Test extends React.Component {
             onFocus={() => console.log('focus')}
             onBlur={(v) => console.log('blur', v)}
             tokenSeparators={[' ', ',']}
+            onSearch={(v) => console.log('search', v)}
           >
             {children}
           </Select>
